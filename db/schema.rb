@@ -10,13 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_01_233721) do
+ActiveRecord::Schema.define(version: 2023_04_02_225140) do
 
   create_table "projects", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "date"
+    t.string "event_type"
+    t.integer "priority"
   end
 
 end

@@ -10,5 +10,20 @@
   <%= @project.description %>
 </p>
 
+<p>
+  <strong>Date:</strong>
+  <%= @project.date %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @project.event_type %>
+</p>
+
+<p>
+  <strong>Priority:</strong>
+  <%= @project.priority %>
+</p>
+
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
