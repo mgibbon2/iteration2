@@ -22,9 +22,10 @@
   </div>
 
   <div class="field">
-    <%= form.label :date %>
-    <%= form.text_field :date %>
+    <%= form.label :day %>
+    <%= form.select :day, ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'] %>
   </div>
+
 
   <div class="field">
     <%= form.label :event_type %>

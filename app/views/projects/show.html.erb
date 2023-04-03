@@ -11,8 +11,8 @@
 </p>
 
 <p>
-  <strong>Date:</strong>
-  <%= @project.date %>
+  <strong>Day:</strong>
+  <%= @project.day %>
 </p>
 
 <p>
@@ -25,5 +25,5 @@
   <%= @project.priority %>
 </p>
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<a class="button"<%= link_to 'Edit', edit_project_path(@project) %></a>
+<a class="button"<%= link_to 'Back', projects_path %></a>
